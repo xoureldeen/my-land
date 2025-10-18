@@ -616,3 +616,18 @@ footer {
         font-size: 1.1rem;
     }
 }
+/* New rule for the logo image in the toolbar */
+.nav-logo .logo-img {
+    height: 40px; /* Adjust height as needed to fit the bar */
+    width: auto;
+    display: block;
+}
+
+/* Update nav-logo style to remove old text formatting */
+.nav-logo {
+    /* font-size: 1.4rem;  Remove or comment out this line */
+    font-weight: 900;
+    color: var(--text-color);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
