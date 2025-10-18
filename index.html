@@ -1,62 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XOURELDEEN | My LAND</title>
-    <!-- Favicon -->
-    <link rel="icon" href="https://avatars.githubusercontent.com/u/79816069?s=400&u=0b24c176c5fb7f095be719223e804d4125cf1187&v=4" type="image/x-icon" />
-    <!-- Font Awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Core theme CSS -->
+    <title>DABSH MUSIC - @XOURELDEEN</title>
     <link rel="stylesheet" href="style.css">
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/wFSKJCYb/wmremove-transformed-2.jpg">
+</head>
+<body>
 
-  <body>
-    <!-- Parallax Pixel Background Animation -->
-    <section class="animated-background">
-      <div id="stars1"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
-    </section>
-    <!-- End of Parallax Pixel Background Animation -->
+    <header>
+        <nav id="navbar">
+            <div class="nav-content">
+                <a href="index.html" class="nav-logo">DABSH MUSIC</a>
+                <button id="menu-toggle" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="index.html" class="menu-item active">HOME</a>
+                <a href="#tracks" id="nav-music" class="menu-item">MUSIC</a>
+                <a href="whoiam.html" class="menu-item">WHO I AM</a>
+            </div>
+        </nav>
+    </header>
 
-    <a id="profilePicture" href="#popup">
-      <img src="https://avatars.githubusercontent.com/u/79816069?s=400&u=0b24c176c5fb7f095be719223e804d4125cf1187&v=4" alt="Profile Picture">
-    </a>
+    <div class="container">
+        
+        <main>
+            <section id="artist-title">
+                <h1 id="titleName">DABSH - ضبش</h1>
+                <p id="userName">@XOURELDEEN</p>
+                <div class="profile-picture-container">
+                    <img src="https://i.ibb.co/wFSKJCYb/wmremove-transformed-2.jpg" alt="DABSH Profile Picture" class="profile-picture" />
+                </div>
+            </section>
 
-    <div class="overlay" id="popup">
-      <div class="popup">
-        <div class="popup-photo">
-          <a href="https://instagram.fcai11-1.fna.fbcdn.net/v/t51.2885-19/559308939_18322288867242788_2874146571028142616_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fcai11-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QGBiY4W5a3LhvnavJKfWYXOkrG5zD9IqkIX-P_4QXkt8ErOmqK2VONUEe-1IoSrlOkirpXLRFtqZlglmZeDC21L&_nc_ohc=tfodipxytc8Q7kNvwFz2O-x&_nc_gid=Up5UQTbFIbEy1XJGq-Vi-Q&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfcjBnePG6aDb5tKzfWXF5H0LIb1eDkPrD8oZQb8M94ZnA&oe=68F064CF&_nc_sid=7a9f4b" target="_blank">
-            <img src="https://instagram.fcai11-1.fna.fbcdn.net/v/t51.2885-19/559308939_18322288867242788_2874146571028142616_n.jpg?stp=dst-jpg_s150x150_tt6&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fcai11-1.fna.fbcdn.net&_nc_cat=108&_nc_oc=Q6cZ2QGBiY4W5a3LhvnavJKfWYXOkrG5zD9IqkIX-P_4QXkt8ErOmqK2VONUEe-1IoSrlOkirpXLRFtqZlglmZeDC21L&_nc_ohc=tfodipxytc8Q7kNvwFz2O-x&_nc_gid=Up5UQTbFIbEy1XJGq-Vi-Q&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AfcjBnePG6aDb5tKzfWXF5H0LIb1eDkPrD8oZQb8M94ZnA&oe=68F064CF&_nc_sid=7a9f4b" alt="Profile Picture">
-          </a>
-        </div>
-        <div class="popup-quote">
-          Never hate your enemies, it affects your judgement.
-        </div>
-        <a class="popup-close" onclick="history.back()">&times;</a>
-      </div>
+            <hr class="section-divider">
+
+            <section id="youtube-section" class="card youtube-card">
+                <div class="youtube-header">
+                    <img src="https://i.ibb.co/wFSKJCYb/wmremove-transformed-2.jpg" alt="YouTube Channel Logo" class="youtube-logo" />
+                    <div class="youtube-channel-info">
+                        <p class="youtube-name">DABSHILION - ضبشليون</p>
+                        <p class="youtube-username">@XOURELDEEN</p>
+                    </div>
+                    <a href="https://www.youtube.com/@XOURELDEEN" target="_blank" class="subscribe-btn">
+                        <i class="fab fa-youtube"></i> Subscribe
+                    </a>
+                </div>
+                <div class="youtube-stats">
+                    <div class="stat">
+                        <p class="stat-value" id="subscribers">...</p>
+                        <p class="stat-label">Subscribers</p>
+                    </div>
+                    <div class="stat">
+                        <p class="stat-value" id="total-views">...</p>
+                        <p class="stat-label">Total Views</p>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="work">
+                <h2 class="section-title">Latest Work</h2>
+                <a class="portfolio-card" href="https://www.instagram.com/reel/DOy2Hl9jIbq/?igsh=MWdkZTAwaTExcWZmMg==" target="_blank">
+                    <div class="portfolio-card-image-container">
+                        <img class="portfolio-image" src="https://i.ibb.co/Tqr1SD6B/551363213-18021755435765619-5788058549646142997-n.jpg" alt="KOTN Commercial Thumbnail" loading="lazy" />
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-title">KOTN Ad with my music (Mastoul)</div>
+                            <i class="fas fa-external-link-alt portfolio-link-icon"></i>
+                        </div>
+                    </div>
+                </a>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="tracks" class="card tracks-section">
+                <h2 class="section-title tracks-title">Latest Tracks</h2>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/4t04bR5F7hnWMJI77pDJHM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3HF4xZUpDeQuluerolWNFT?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1XqDEmJmgkrzDOc5EhpgUE?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3m7EManLUh9j0jOw4N4a9m?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </section>
+        
+            <hr class="section-divider">
+
+            <section id="links">
+                <h2 class="section-title">Connect</h2>
+                <a class="link" href="https://open.spotify.com/artist/7hzSMWJGwnz6N30JwvCWuK" target="_blank"><i class="fab fa-spotify"></i> Spotify</a>
+                <a class="link" href="https://www.instagram.com/xoureldeen" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a class="link" href="https://soundsauce.io/user/xoureldeen/" target="_blank"><i class="fas fa-globe"></i> SoundSauce</a>
+                <a class="link" href="https://github.com/xoureldeen" target="_blank"><i class="fab fa-github"></i> Github</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by rapdisc.com &copy; 2025</p>
+        </footer>
     </div>
-
-    <div id="userName">
-      @xoureldeen
-    </div>
-
-    <div id="links">
-      <a class="link" href="https://github.com/xoureldeen" target="_blank">
-        <i class="fab fa-github">&nbsp;</i>Github
-      </a>
-      <a class="link" href="https://open.spotify.com/artist/7hzSMWJGwnz6N30JwvCWuK" target="_blank">
-        <i class="fab fa-spotify">&nbsp;</i>Spotify
-      </a>
-      <a class="link" href="https://www.instagram.com/xoureldeen" target="_blank">
-        <i class="fab fa-instagram">&nbsp;</i>Instagram
-      </a>
-    </div>
-
-    <div id="hashtag">
-      #DB4ONTHEBEAT
-    </div>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
