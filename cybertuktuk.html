@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DABSH - CYBER TUKTUK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="https://i.ibb.co/wFSKJCYb/wmremove-transformed-2.jpg">
+    <style>
+        /* New styles for the album page to ensure text aligns well */
+        .album-card {
+            text-align: right; /* Adjust text alignment for Arabic content */
+            padding: 30px;
+        }
+
+        .album-card .section-title {
+            text-align: center;
+        }
+
+        .album-text {
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: var(--text-color);
+        }
+
+        .album-track-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .album-track-list li {
+            background-color: var(--hover-color);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-color);
+            display: flex;
+            justify-content: flex-end; /* Align track number to the left and text to the right in Arabic flow */
+            gap: 10px;
+            border-right: 3px solid var(--accent-color);
+        }
+
+        .track-number {
+            font-weight: 900;
+            color: var(--accent-color);
+            flex-shrink: 0;
+        }
+
+        .track-details {
+            text-align: right;
+            flex-grow: 1;
+        }
+
+        .quote-note {
+            font-style: italic;
+            background-color: var(--hover-color);
+            border-right: 5px solid #ff0000; /* Red border for emphasis on the note */
+            padding: 15px;
+            margin: 30px 0;
+            text-align: right;
+        }
+        
+        .release-date-card {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+        }
+
+        .release-date-card p {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 5px 0 0;
+        }
+
+        .release-date-card .date {
+            font-size: 2rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="nav-content">
+            <a href="index.html" class="nav-logo">
+                <img src="https://i.ibb.co/q3RCk5jn/logo.png" alt="DABSH MUSIC Logo" class="logo-img" />
+            </a>
+                <button id="menu-toggle" aria-label="Open Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div id="dropdown-menu" class="dropdown-menu">
+                <a href="index.html" class="menu-item">HOME</a>
+                <a href="index.html#tracks" class="menu-item">MUSIC</a>
+                <a href="whoiam.html" class="menu-item">WHO I AM</a>
+                <a href="album.html" class="menu-item active">CYBER TUKTUK</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <main dir="rtl">
+            <section id="album-header">
+                <h1 class="page-title">CYBER TUKTUK</h1>
+                <p id="userName">ألبوم قادم | 2025</p>
+                <div class="release-date-card">
+                    <p>موعد الإصدار</p>
+                    <p class="date">12 / 12 / 2025</p>
+                </div>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="about-team" class="card album-card">
+                <h2 class="section-title">اتحاد ملاك المجره</h2>
+                <p class="album-text">
+                    اتحاد ملاك المجره هو تيم من شباب المنتجين المصريين اللي بيشتغلوا على إعادة تقديم الفولكلور المصري بأسلوب معاصر.
+                </p>
+                <p class="album-text">
+                    بدأ التيم من ضبش وزحل، وتوسع لمنتدى موسيقي أندرجراند في مصر، ليصبح منصة لتبادل الإنتاج الموسيقي وإطلاق أصوات جديدة.
+                </p>
+                <p class="album-text">
+                    التيم عنده رؤية فنية واضحة: تقديم الموسيقى المصرية والعربية على مستوى محلي وعالمي بطريقة مبتكرة.
+                </p>
+            </section>
+
+            <hr class="section-divider">
+            
+            <section id="album-concept" class="card album-card">
+                <h2 class="section-title">مفهوم الألبوم</h2>
+                <p class="album-text">
+                    "Cyber TukTuk" هو ألبوم يقدّم تجربة صوتية مستوحاة من رحلة ضبش، لكنه في الوقت نفسه يحكي قصة المنتدى كله، الشباب المصريين اللي بيشاركوا في التجربة الموسيقية ويعيدون تقديم الفولكلور بأسلوب حديث.
+                </p>
+                <p class="album-text">
+                    الألبوم عبارة عن رحلة صوتية من بنغازي للقاهرة، فيها كل تراك يمثل فصل من الأحداث، وكل نوتة تحكي قصة.
+                </p>
+                <p class="album-text">
+                    معظم التفاصيل الحقيقية للأحداث والمشاعر تظهر فقط عند سماع الألبوم نفسه، وليس في الوصف أو الأسماء فقط.
+                </p>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="track-story" class="card album-card">
+                <h2 class="section-title">قصة الألبوم بالتراكات</h2>
+                
+                <ul class="album-track-list">
+                    <li>
+                        <span class="track-number">1.</span>
+                        <span class="track-details">
+                            **INTRO × Zo7al**<br>
+                            افتتاح الألبوم، تقديم للرحلة والعالم الصوتي لـ Cyber TukTuk.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">2.</span>
+                        <span class="track-details">
+                            **3z El2lob × Bloody**<br>
+                            عز القلوب مش فالجيوب. بداية القصة، تمهيد لتجربة ضبش وموقفه أمام الواقع والتحديات.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">3.</span>
+                        <span class="track-details">
+                            **BENGHAZI × 3assem**<br>
+                            ميلاد ضبش وشخصيته المتشكلة في بنغازي وسط الأحداث العشوائية.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">4.</span>
+                        <span class="track-details">
+                            **SHAFRA × Ghazelle**<br>
+                            الشفرة أو موس الحلاقة، وسيلة الدفاع عن النفس في عالم مليء بالمخاطر.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">5.</span>
+                        <span class="track-details">
+                            **TEKYA × Clever**<br>
+                            فترة استراحة وتأمل، توقف ضبش بعد المواجهات وصراعاته.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">6.</span>
+                        <span class="track-details">
+                            **HASHISHA × Zo7al**<br>
+                            لحظة استرخاء والتفريغ النفسي، تمهيد للانتقال للمرحلة التالية.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">7.</span>
+                        <span class="track-details">
+                            **DANCIN × Trojan**<br>
+                            الحركة والاحتفال، الرجوع للحياة بعد كل التجارب.
+                        </span>
+                    </li>
+                    <li>
+                        <span class="track-number">8.</span>
+                        <span class="track-details">
+                            **OUTRO**<br>
+                            ختام الرحلة، ترك مساحة للتأمل والمستقبل.
+                        </span>
+                    </li>
+                </ul>
+
+                <blockquote class="quote-note">
+                    **ملاحظة:** كل تراك في الألبوم يحكي تفاصيل دقيقة للقصة، وسماع الألبوم هو الطريقة الوحيدة لفهم كل الأحداث والرسائل. القصة ليست فقط عن ضبش كشخص، لكنها تمثل رؤية التيم بالكامل، الشباب المصريين الذين يسعون لإظهار الفن المصري والعربي على مستوى محلي وعالمي.
+                </blockquote>
+
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="musical-direction" class="card album-card">
+                <h2 class="section-title">التوجه الموسيقي</h2>
+                <ul class="album-track-list" style="border: none; gap: 5px;">
+                    <li style="border: none; justify-content: flex-end; padding: 5px 0; background: none;">
+                        <span class="track-details">
+                            مزيج من Trap شعبي، Jersey club، وelectronic chaabi.
+                        </span>
+                    </li>
+                    <li style="border: none; justify-content: flex-end; padding: 5px 0; background: none;">
+                        <span class="track-details">
+                            دمج عناصر فولكلور مصري بأسلوب معاصر.
+                        </span>
+                    </li>
+                    <li style="border: none; justify-content: flex-end; padding: 5px 0; background: none;">
+                        <span class="track-details">
+                            إيقاعات وسامبلز تعكس أحداث كل تراك.
+                        </span>
+                    </li>
+                    <li style="border: none; justify-content: flex-end; padding: 5px 0; background: none;">
+                        <span class="track-details">
+                            التراكات مصممة لتقديم تجربة متكاملة للمستمع، بحيث كل نوته تحكي جزء من القصة.
+                        </span>
+                    </li>
+                </ul>
+            </section>
+
+            <hr class="section-divider">
+
+            <section id="contact-info" class="card album-card">
+                <h2 class="section-title">للتواصل</h2>
+                <p class="album-text">
+                    **Noureldeen Elsayed** (Founder)
+                    <br>
+                    Email: noureldeenelsayed856@gmail.com
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Powered by rapdisc.com © 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
